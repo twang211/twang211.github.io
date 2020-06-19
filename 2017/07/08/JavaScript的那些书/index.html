@@ -1,0 +1,1468 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="前端,WEB,CSS,HTML,js,JavaScript," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Mr.Naas Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="第一批次:入门级 ，也适合想掌握一些前端技能的非前端工程师。 《JavaScript DOM 编程艺术》 第二批次:成为一名合格的前端工程师 《JavaScript高级程序设计》(或《JavaScript权威指南》) 《精通JavaScript》 第三批次:更优秀的代码 ，更优良的设计 《JavaScript语言精粹》 《JavaScript设计模式》 第四批次:从语言细节到复杂工程实践 ，想开发">
+<meta name="keywords" content="前端,WEB,CSS,HTML,js,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript的那些书">
+<meta property="og:url" content="http://blog.mrnaas.com/2017/07/08/JavaScript的那些书/index.html">
+<meta property="og:site_name" content="Mr.Naas Blog">
+<meta property="og:description" content="第一批次:入门级 ，也适合想掌握一些前端技能的非前端工程师。 《JavaScript DOM 编程艺术》 第二批次:成为一名合格的前端工程师 《JavaScript高级程序设计》(或《JavaScript权威指南》) 《精通JavaScript》 第三批次:更优秀的代码 ，更优良的设计 《JavaScript语言精粹》 《JavaScript设计模式》 第四批次:从语言细节到复杂工程实践 ，想开发">
+<meta property="og:updated_time" content="2017-07-08T07:34:45.395Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript的那些书">
+<meta name="twitter:description" content="第一批次:入门级 ，也适合想掌握一些前端技能的非前端工程师。 《JavaScript DOM 编程艺术》 第二批次:成为一名合格的前端工程师 《JavaScript高级程序设计》(或《JavaScript权威指南》) 《精通JavaScript》 第三批次:更优秀的代码 ，更优良的设计 《JavaScript语言精粹》 《JavaScript设计模式》 第四批次:从语言细节到复杂工程实践 ，想开发">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '2YP3OBH3MY',
+      apiKey: '1338659f61fabd19a5afb1b833aaf26c',
+      indexName: 'myblog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.mrnaas.com/2017/07/08/JavaScript的那些书/"/>
+
+
+
+
+
+  <title>JavaScript的那些书 | Mr.Naas Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255836677'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1255836677%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mr.Naas Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Personal technical blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.mrnaas.com/2017/07/08/JavaScript的那些书/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Naas">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.Naas Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JavaScript的那些书</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T15:33:29+08:00">
+                2017-07-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端学习/" itemprop="url" rel="index">
+                    <span itemprop="name">前端学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/07/08/JavaScript的那些书/" class="leancloud_visitors" data-flag-title="JavaScript的那些书">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>第一批次:入门级 ，也适合想掌握一些前端技能的非前端工程师。</p>
+<p>《JavaScript DOM 编程艺术》</p>
+<p>第二批次:成为一名合格的前端工程师</p>
+<p>《JavaScript高级程序设计》(或《JavaScript权威指南》)</p>
+<p>《精通JavaScript》</p>
+<p>第三批次:更优秀的代码 ，更优良的设计</p>
+<p>《JavaScript语言精粹》</p>
+<p>《JavaScript设计模式》</p>
+<p>第四批次:从语言细节到复杂工程实践 ，想开发靠谱的各类底层代码 ，应该看看</p>
+<p>《Secrets of the JavaScript Ninja》</p>
+<p>《JavaScript Patterns》</p>
+<p>《ECMA-262 in Detail》</p>
+<p>应该重视跟踪阅读一些大牛们的Blog了（伯乐在线编注：这篇文章《你得学JavaScript》中有推荐两位大牛的博客，Douglas Crick的博客 和 Angus Croll的JavaScript博客。）</p>
+<p>一直在等待：一本JavaScript语言作者或引擎实现者写的书。</p>
+<p>番外篇：各类专题书籍 ，读好第二批次书籍之后 ，有精力就接触下</p>
+<p>《高性能网站建设指南》</p>
+<p>《高性能网站建设进阶指南》</p>
+<p>《高性能JavaScript》</p>
+<p>《Ajax实战》</p>
+<p>《jQuery实战》</p>
+<p>《精通CSS》(或《CSS权威指南》)</p>
+<p>《正则表达式必知必会》(或《正则表达式权威指南》)</p>
+<p>应该选择：一本HTML5方面的书</p>
+<p>应该选择：一本NodeJS方面的书</p>
+<p>《JavaScript DOM 编程艺术》</p>
+<p>话说这本书的中文标题有一些标题党的 ，当初如果知道这仅是一本入门书籍 ，我是不会买来的。拿到后一天就看完了 ，对我来说没有太多技能上的实质帮助。不过这个书语言很流畅 ，重要的是对知识深浅度把握的很好 ，html/js/css/dom各个方面都把握在一个合适的度 ，这很符合我对书籍期望 ，一步步走 ，每一步都踏踏实实。</p>
+<p>这本书通过几个实例 ，循序渐进的介绍了前端开发的方方面面 ，让大家能够了解前端的技术体系概况 ，又能具备了一些简单的动手能力。如果大家对我之前写过的浏览器端技术体系概览 — 前端开发的七种武器有些感觉 ，那读读这本书正好能上手实践一把。</p>
+<p>去年淘宝前端懒懒交流会的豆瓣小站上做了一个调查 ，如果非要您推荐一本适合新人学习的js方面的书，您的推荐是什么?虽然投票的人不多 ，但这本书却是遥遥领先。</p>
+<p>《JavaScript高级程序设计》</p>
+<p>这本书的第一版很全面且不枯燥的书籍 ，年纪轻轻的NCZ有这样的大作难能可贵。读懂这本书 ，前端技能又可以上一个台阶 ，基本上可以成为专业的前端工程师了。</p>
+<p>对于当时的我来讲 ，这本书及时的补充了浏览器兼容性方面的知识 ，特别是事件相关的知识 ，这个浏览器间差别最大。有些内容讲的非常简单明了 ，比如call和apply的用法 ，之前总是理解不好 ，NCZ几句话+一个例子就说明白了。</p>
+<p>然而作为全面型的书籍 ，第一版也是有一些问题的:</p>
+<ol>
+<li><p>闭包只半页篇幅 ，没说清楚。</p>
+</li>
+<li><p>匿名函数没怎么讲。</p>
+</li>
+<li><p>全书没提到constructor ，更别说hasOwnProperty ，<strong>proto</strong>。</p>
+</li>
+</ol>
+<p>这带来了我之前说的深一脚浅一脚的困扰 ，这些知识基本上是通过《JavaScript权威指南》阅读中补充的 ，当然当时版本的权威指南也有同样的问题 ，比如它没解释instanceof。也没提到<strong>proto</strong>。这造成了我对面向对象理解的不全面 ，当时在做了N多测试后还很蛋疼的写了一篇博文<javascript constructor和instanceof,jsoo中的一对欢喜冤家=""> ，后来接触到《JavaScript设计模式》关于OO的全面论述之后 ，果断删掉了这篇JY。</javascript></p>
+<p>相信这本书的第二版 ，以及权威指南的第六版肯定会在这些方面进行补充。不过这两本书都是十足的大部头 ，高级程序设计第二版已经比权威指南去除附录要厚了。</p>
+<p>一本全面且不枯燥的书太难找了 ，所以我还是喜欢第一版。对我技术上的提升帮助非常之大。忍不住再秀一张图(当时在封闭开发Alimama。com ，马云时常来 ，他不肯在书的第一页签名搞得好像他写的 ，于是把签名画在了第二页。)</p>
+<p>《精通JavaScript》</p>
+<p>我会把书籍分成两类 ，一类是全面型 ，一类是犀利型。前面介绍了一本全面型的书籍 ，接下来介绍的这本的特点是非常犀利 ，这类书籍的特点是作者能找对重点(2/8原则掌握的很好) ，在重点位置深入挖掘。这本书的作者John Resig也是jQuery的作者 ，他显然是个足够犀利的人儿。</p>
+<p>jQuery从未承诺解决所有问题 ，但再一些重点部位的突破 ，让这个类库如此流行。这本书并没有着重介绍jQuery ，还是基于原生的JavaScript和DOM API。</p>
+<p>列一些这本书的重点话题 ，能够很好的看出作者为什么会开发出jQuery ，或者说jQuery为什么是现在的样子:</p>
+<ol>
+<li><p>如何创建可复用的代码?如何调试 ，测试?(这是基础)</p>
+</li>
+<li><p>如何判断DOM何时加载完毕?如何遍历 ，修改DOM?(jQuery以DOM为核心 ，节点的增删改查 ，事件响应是重点)</p>
+</li>
+<li><p>如何确定元素的位置 ，相对于页面/屏幕?如何做平滑的动画?(思考下CSS相关的话题很多 ，作者为什么选了这两个?)</p>
+</li>
+<li><p>如何改进表单验证 ，封装完整的Ajax程序?(涉及数据交互 ，是另一个重中之重。)</p>
+</li>
+</ol>
+<p>不算厚的一本书 ，基本上就是以上的话题+几个实例。当我们看过了一本全面型的书籍 ，对前端的知识有了深入的了解之后 ，这本书的作者指出了今后的重点 ，并告诉大家如何把知识用到解决重点问题上。</p>
+<p>《JavaScript语言精粹》</p>
+<p>推荐大家看看阮一峰老师的博文《JavaScript诞生记》，JavaScript是Brendan Eich大神10天时间设计出的语言 ，现在成了Web前端领域的唯一语言。</p>
+<p>一方面这门语言博采众家之长 ，也帮助它维系了长久的生命力:</p>
+<p>“1. 借鉴C语言的基本语法；</p>
+<ol>
+<li><p>借鉴Java语言的数据类型和内存管理；</p>
+</li>
+<li><p>借鉴Scheme语言，将函数提升到”第一等公民”（first class）的地位；</p>
+</li>
+<li><p>借鉴Self语言，使用基于原型（prototype）的继承机制。”</p>
+</li>
+</ol>
+<p>另一方面”由于设计时间太短，语言的一些细节考虑得不够严谨，导致后来很长一段时间，Javascript写出来的程序混乱不堪。”Brendan Eich对其这10天工作的评价是:”它的优秀之处并非原创，它的原创之处并不优秀。”</p>
+<p>Douglas Crockford通过《JavaScript: The Good Parts》这本书对JavaScript进行了一次大审判 ，老道认为JavaScript语言有很多优秀的地方 ，也有一些鸡肋和糟粕。老道不反对用这门语言 ，在规避一些鸡肋和糟粕之后它自然是优秀的。<br>老道认为JavaScript优美的特性如下:</p>
+<ol>
+<li><p>函数是头等对象(可以作为其他函数的参数和返回值 ，支持闭包)</p>
+</li>
+<li><p>基于原型继承的动态对象</p>
+</li>
+<li><p>对象字面量和数组字面量(构成JSON的基础)</p>
+</li>
+</ol>
+<p>老道列出了很多鸡肋和糟粕 ，并提供了JSLint这个工具 ，来校验代码是否使用了不好的部分。书中给出的语法图让我有深入学习一下&lt;编译原理&gt;的冲动 ，也理解了JSLint作为用JS语言分析JS语言的工具成型的理论基础。</p>
+<p>强烈建议大家使用JSLint来检测自己的代码 ，但是我们不必教条 ，可以违返其中一些的检测规则 ，只要我们清楚老道为什么会设置这个规则 ，有什么风险?若我们不遵守这个规则 ，是否能回避相应的风险。</p>
+<p>我觉得这本书最重要的意义是告诉我们为什么”它是鸡肋 ，它是糟粕”这是经过前面的学习和大量实践之后 ，成熟的开发者应该关注的。比如:</p>
+<ol>
+<li><p>hasOwnProperty ，老道说它糟粕的原因是因为这不是一个关键字 ，而是一个Object。prototype上可以被重写的方法。那么这个告诉我们 ，并不是不要用hasOwnProperty ，而是要注意不要覆盖它。</p>
+</li>
+<li><p>eval的主要问题是性能 ，大量的eval(类eval)语句降低了JS引擎的性能。而经过测试少量的eval语句+eval大段的JS文本性能并不差 ，有必要也可以考虑使用。</p>
+</li>
+</ol>
+<p>《JavaScript设计模式》</p>
+<p>这是一本介绍JavaScript面向对象编程以及设计模式非常好的书籍。相对于又一本全面型书籍语言精粹 ，犀利型书籍登场了。我对面向对象的看法是：隐藏细节 ，方便做大。基于良好的抽象和封装 ，我们可以方便的自顶而下的设计 ，自底而上的开发。面向对象的优缺点不是本文的重点 ，这里不讨论 ，只能说这是一个非常不错的代码设计实现方法论。</p>
+<p>JavaScript到底是不是一个面向对象的语言 ，从本质说一定是的 ，从表象来说OO的不那么明显。我们必须通过一些额外的代码实现诸如 ，划分公有/私有 ，接口 ，继承 ，多态等特性。由于JavaScript语言的灵活性 ，实现的方式非常多。这本书的第一部分对常见的两类实现模式:类式继承和原型继承都有非常好的最佳实践总结。所以我的想法是完全读懂它 ，然后按照这个来做就好了。如果这里介绍的实践足够强大 ，我们没有必要发明新的继承实现模式了 ，事实上YUI一直是这种模式 ，而新的JavaScript引擎甚至引入了Object。create方法 ，将一些动作写入标准内置在JS引擎中。</p>
+<p>我们应该将视点放在设计模式上 ，GoF的设计模式那本书里的例子 ，对于前端开发来说并不都是很好理解 ，而这本书的例子全部是前端相关 ，有助于大家理解设计模式的精妙。还有些同学说 ，即使我不了解GoF的理论 ，我也在默默的用这些模式了。确实是这样 ，但我想我们关注设计模式 ，不光要学会各种模式是怎样的 ，更重要的是学习到各种模式适合什么场合 ，不适合什么场合。了解有什么优点 ，也要了解有什么缺点 ，你正在默默使用的模式存在隐患么?系统学习之后会对其更有把握。</p>
+<p>前几天听同事说这本书全面断货 ，不知道是太火 ，还是印的太少 ，希望能尽快看到上架。</p>
+<p>Secrets of the JavaScript Ninja</p>
+<p>进入第四个批次 ，这里的书籍多数没有中译本出版。现阶段想开发靠谱的底层类库代码 ，确实需要啃一些外文书了。英文书很多 ，没有精力大量阅读 ，通常读一些口碑较好的书籍。</p>
+<p>另外 ，到了这个批次 ，我的阅读量也相当的有限 ，所以肯定有很多好的内容没有提到 ，期望大家能继续推荐。而且到了这个批次 ，书籍产出肯定跟不上知识的更新速度 ，跟踪阅读一些JS大牛们的Blog应该成为习惯。<br>这是jQuery作者的第二本书 ，自然优势犀利型的代表。John Resig已经陆续放出这本书的大部分内容 ，从2008年开始写 ，计划2012年5月出版。</p>
+<p>如果说JR的第一本书能够看出为什么有jQuery ，那么这本书能看出让jQuery发展下去 ，作者关注了哪些。我们会看到其实一些很细节的内容 ，比如强调测试用例的构建/自动化测试的方法 ，比如如何利用每个function实例的length属性 ，比如对with ，eval的思考和发散等等。</p>
+<p>关于这本书具体如何的好处 ，我还理不清 ，拿来开开眼界是非常不错的。记得玉伯大大组织了一波同学在翻译 ，不知进展如何了。</p>
+<p>《JavaScript Patterns》</p>
+<p>乍一看这本书标题 ，以为又是一本讲设计模式的书 ，那和《JavaScript设计模式》重复了 ，开始没有仔细关注。今年拔赤推荐了它 ，才发现者并不仅仅介绍GoF的设计模式而是涵盖前端开发各个方面的先进理论。虽然是09年的书，这两年前端的很多较深刻变化在这边书里都能看到雏形。上一本书犀利，这本更全面。</p>
+<p>作者Stoyan Stefanov是Yahoo的前端技术专家 ，从这本书中可以看到很多YUI3设计上的本源 ，比如在对象创建模式中介绍的模块模式/沙箱模式。近来CommonJS Loader的流行在这之上的继续深入发掘。这本书还包括代码测试 ，打包 ，部署 ，加载策略等各个流程中的诸多细节 ，这些构成了完整的体系在Yahoo在YUI3都有非常好的实践。</p>
+<p>听说我们的同事拔赤和一舟在翻译这个本书 ，非常期待。</p>
+<p>ECMA-262</p>
+<p>这不是一本书 ，是俄罗斯小伙子写的一系列ECMA-262标准分析文章 ，ECMA-262-3系列已经很完整。标准像汇编语言一样枯燥 ，而这系列文章把枯燥的标准转化为一系列深入讨论的话题 ，配合恰到好处的示例 ，一定会让大家对JS引擎的认识再上一层。</p>
+<p>网上有一些译文 ，但是由于类似文章译文比较少 ，很多英文还未达成一致表述 ，所以推荐阅读英原文。另外作者很好 ，遇到的棘手的问题 ，去咨询他都能很快收到很好的回复。</p>
+<p>期待:一本JavaScript语言作者或引擎实现者写的书</p>
+<p>一直以来期待JavaScript能有一本像《C程序设计语言》这样的大作，最近也在读计算机系统概论补一些大学时没学好的知识 ，非常认同书中”自底而上”的学习路线。我想对JavaScript引擎的透彻分析 ，能够减少大家看着实验结果 ，猜测着写书的境况。随着NodeJS的火爆 ，引擎的技术分析文章越来越多 ，期待很快出现集大成者。</p>
+<p>《高性能网站建设指南》《高性能网站建设进阶指南》《高性能JavaScript》</p>
+<p>进入番外篇 ，推荐的书籍都是有针对性的领域之作 ，内容往往并不高深 ，大家根据自己的实际情况进行选择阅读。</p>
+<p>高性能的网页是前端必然的追求 ，Steve Sounders率先在Yahoo开启了这方面的专题研究 ，伴随着《高性能网站建设指南》的出版和YSlow工具发布。网站性能优化 ，特别是前端角度和运维角度的优化方案 ，进入了人们的视野 ，同时获得了巨大的效果 ，甚至形成了名为WPO(Web Performance Optimization)产业。</p>
+<p>第一本书除了介绍了能够立竿见影的规则的同时也开启了民智。大家开始思考如何做优化 ，如何结合自己的应用实践做优化。而后两本书基本上是遵循优化思路的继续得来的实践总结。关于优化的工具,思路，方法是我特别强调的。感兴趣的同学可以看下在Yslow 34 Rules之后 — 网站性能优化思路和进展 这一篇。</p>
+<p>其他领域之作</p>
+<p>接下来介绍这些专题类书籍 ，并不是特别推荐 ，往往每个专题都有很多书籍可供选择 ，随手写一些读书心得吧。</p>
+<p>《Ajax实战》：06年的书，很早就购入。书中介绍了很多RIA高级应用的相关话题,很开眼界。</p>
+<p>《jQuery实战》：一定需要一本介绍jQuery的书，这书还可以，不过现在看来应该比较旧了,jQuery已经更新了很多。我主要从这本书了解了jQuery的工具函数扩展机制和插件机制是如何实现的。jQuery让完全不了解prototype属性的同学也能写出可复用的复杂组件，非常不容易，以后再单独写写对jQuery的一些看法吧。</p>
+<p>《精通CSS》：一定需要一本介绍CSS的书，工作中一直以来CSS用的不是很深入,不做特殊介绍.</p>
+<p>《正则表达式必知必会》：一定需要一本正则方面的书籍，这本小册子查起来蛮方便.</p>
+<p>《HTML5揭秘》和《HTML5高级程序设计》买回来一直没看，对HTML5的新增特性还是有了解的,等能用到时再看再评。</p>
+<p>希望看到NodeJS方面的书籍 ，尽快引入。</p>
+<p>写在最后</p>
+<p>我只能推荐我看过的书对吧 ，所以大家懂的。我们不去对比各种电子产品 ，就是对比鸡蛋大米 ，书籍都是非常廉价的。</p>
+<p>当有了领域内一定的实践经验之后 ，阅读一本相关的书籍并不是难事 ，也并不会耗费很多时间。</p>
+<p>全面型的书籍可以让大家技能水平一步一步地稳步提高 ，让大家站得高也站得稳。</p>
+<p>犀利型的书籍可以让大家了解重点 ，了解别人是怎么运用那些你也会的知识的。</p>
+<p>专题类的书籍是拓宽眼界 ，帮助大家完成工作任务的好手。</p>
+<p>对于非英文专业的同学 ，如果有中译本 ，不用非得纠结着去看原版 ，我们要最快学到知识 ，最快进入思考与实践。</p>
+<p>感谢作者 ，译者(我的同事中有很多译者 ，都说指望这个赚钱是不可能的) ，以及选择运作这些书出版的各位老师。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://blog.mrnaas.com/wechat.jpg" alt="Mr.Naas wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎关注本人公众号</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+            <a href="/tags/WEB/" rel="tag"># WEB</a>
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+            <a href="/tags/HTML/" rel="tag"># HTML</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/08/mongoDB分享/" rel="next" title="mongoDB分享">
+                <i class="fa fa-chevron-left"></i> mongoDB分享
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/11/计算机插件/" rel="prev" title="计算机插件">
+                计算机插件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Mr.Naas" />
+          <p class="site-author-name" itemprop="name">Mr.Naas</p>
+           
+              <p class="site-description motion-element" itemprop="description">Mainly used to record their own problems encountered in the work and solutions and share some of the commonly used technical experience!</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">40</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">40</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/twang211" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/twanggys122611" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.mrnaas.com" title="Mr.Naas Blog" target="_blank">Mr.Naas Blog</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.wangtong.club" title="个人简历" target="_blank">个人简历</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.3hzone.com" title="养生论坛" target="_blank">养生论坛</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.Naas</span>
+</div>
+
+
+<div class="powered-by">
+  个人博客 - <a class="theme-link" href="http://www.mrnaas.com" target="_blank">Mr.Naas Blog</a>
+</div>
+
+<div class="theme-info">
+  技术支持 -
+  <a class="theme-link" href="http://www.wangtong.club" target="_blank">
+    Mr.Naas
+  </a> - 
+  <a class="theme-link" href="http://www.3hzone.com" target="_blank">
+    中草药养生论坛
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136870"></script>
+      <!-- UY END -->
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("huICCjx5r2aX8cSiuIWrFW4g-gzGzoHsz", "P34NagBsR9ebTIEsngUminzM");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.1"></script>
+
+
+</body>
+</html>
